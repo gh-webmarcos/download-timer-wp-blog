@@ -1,0 +1,16 @@
+.webMarcosBTN {
+  position: relative;
+  padding: 10px 50px 10px 50px;
+  background: #04AA6D;
+  line-height: 1.6em;
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+  display: block;
+  cursor: pointer;
+  user-select: none;
+}
+#webmarcosTimer{
+  font-weight: 600;
+  color: #fff;
+}
