@@ -37,3 +37,7 @@ webMarcos.addEventListener("click", () => {
         : (webMarcos.innerText = `${countdown}`);
   }, 1e3);
 });
+
+
+
+Copyright - Web Marcos
