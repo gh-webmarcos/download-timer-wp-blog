@@ -1,0 +1,39 @@
+HTML Code
+
+<a class="webMarcosBTN" id="webmarcosTimer">Click - Canva Pro Invite Link</a>
+<script>
+  const downloadLink = "https://lnk.at/antonygibson";
+  let countdown = 10;
+</script>
+
+CSS Code
+
+.webMarcosBTN {
+  position: relative;
+  padding: 10px 50px 10px 50px;
+  background: #04AA6D;
+  line-height: 1.6em;
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+  display: block;
+  cursor: pointer;
+  user-select: none;
+}
+#webmarcosTimer{
+  font-weight: 600;
+  color: #fff;
+}
+
+JS Code
+
+const webMarcos = document.getElementById("webmarcosTimer");
+webMarcos.addEventListener("click", () => {
+  (webMarcos.disabled = !0), (webMarcos.innerText = `${countdown}`);
+  const n = setInterval(() => {
+    countdown--,
+      countdown < 0
+        ? (clearInterval(n), (window.location.href = downloadLink))
+        : (webMarcos.innerText = `${countdown}`);
+  }, 1e3);
+});
